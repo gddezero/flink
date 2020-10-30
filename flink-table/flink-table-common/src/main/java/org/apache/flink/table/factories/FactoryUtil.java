@@ -45,7 +45,6 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
 import java.util.Optional;
 import java.util.ServiceConfigurationError;
 import java.util.ServiceLoader;
@@ -334,17 +333,12 @@ public final class FactoryUtil {
         }
     }
 
-    private static String stringifyOption(String key, String value) {
-        return String.format(
-                "'%s'='%s'",
-                EncodingUtils.escapeSingleQuotes(key), EncodingUtils.escapeSingleQuotes(value));
-    }
-
-    private static Configuration asConfiguration(Map<String, String> options) {
-        final Configuration configuration = new Configuration();
-        options.forEach(configuration::setString);
-        return configuration;
-    }
+	private static String stringifyOption(String key, String value) {
+		return String.format(
+			"'%s'='%s'",
+			EncodingUtils.escapeSingleQuotes(key),
+			EncodingUtils.escapeSingleQuotes(value));
+	}
 
     private static <T> T readOption(ReadableConfig options, ConfigOption<T> option) {
         try {
@@ -379,7 +373,7 @@ public final class FactoryUtil {
                 DynamicTableFactory tableFactory, DynamicTableFactory.Context context) {
             this.tableFactory = tableFactory;
             this.context = context;
-            this.allOptions = asConfiguration(context.getCatalogTable().getOptions());
+            this.allOptions = Configuration.fromMap(context.getCatalogTable().getOptions());
             this.consumedOptionKeys = new HashSet<>();
             this.consumedOptionKeys.add(PROPERTY_VERSION.key());
             this.consumedOptionKeys.add(CONNECTOR.key());

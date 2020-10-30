@@ -87,6 +87,17 @@ public class Configuration extends ExecutionConfig.GlobalJobParameters
         this.confData = new HashMap<>(other.confData);
     }
 
+	// --------------------------------------------------------------------------------------------
+
+	/**
+	 * Creates a new configuration that is initialized with the options of the given map.
+	 */
+	public static Configuration fromMap(Map<String, String> map) {
+		final Configuration configuration = new Configuration();
+		map.forEach(configuration::setString);
+		return configuration;
+	}
+
     // --------------------------------------------------------------------------------------------
 
     /**

@@ -20,7 +20,6 @@ package org.apache.flink.configuration;
 
 import org.junit.Test;
 
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.Set;
@@ -33,14 +32,15 @@ public class DelegatingConfigurationTest {
 
     @Test
     public void testIfDelegatesImplementAllMethods()
-            throws IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+            throws IllegalArgumentException {
 
         // For each method in the Configuration class...
         Method[] confMethods = Configuration.class.getDeclaredMethods();
         Method[] delegateMethods = DelegatingConfiguration.class.getDeclaredMethods();
 
         for (Method configurationMethod : confMethods) {
-            if (!Modifier.isPublic(configurationMethod.getModifiers())) {
+            final int mod = configurationMethod.getModifiers();
+			if (!Modifier.isPublic(mod) || Modifier.isStatic(mod)) {
                 continue;
             }
 
