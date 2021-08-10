@@ -41,10 +41,10 @@ under the License.
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter</artifactId>
+			<scope>compile</scope>
 		</dependency>
-
 		<!-- Need the three Kafka jar version to run the E2E Kafka tests -->
 		<dependency>
 			<groupId>org.apache.flink</groupId>

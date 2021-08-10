@@ -1,0 +1,1020 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "flink-file-sink-common-test",
+        "directory": "/Users/maxwellx/Documents/code/flink/flink-connectors/flink-file-sink-common",
+        "workspaceDir": "/Users/maxwellx/Documents/code/flink",
+        "sources": [
+            "/Users/maxwellx/Documents/code/flink/flink-connectors/flink-file-sink-common/src/test/java"
+        ],
+        "dependencies": [
+            "flink-file-sink-common",
+            "flink-parent",
+            "flink-annotations",
+            "flink-test-utils-parent",
+            "flink-test-utils-junit",
+            "flink-metrics",
+            "flink-metrics-core",
+            "flink-core",
+            "flink-connectors"
+        ],
+        "classpath": [
+            "/Users/maxwellx/Documents/code/flink/target/test-classes",
+            "/Users/maxwellx/Documents/code/flink/target/classes",
+            "/Users/maxwellx/Documents/code/flink/flink-annotations/target/test-classes",
+            "/Users/maxwellx/Documents/code/flink/flink-annotations/target/classes",
+            "/Users/maxwellx/Documents/code/flink/flink-test-utils-parent/target/test-classes",
+            "/Users/maxwellx/Documents/code/flink/flink-test-utils-parent/target/classes",
+            "/Users/maxwellx/Documents/code/flink/flink-test-utils-parent/flink-test-utils-junit/target/test-classes",
+            "/Users/maxwellx/Documents/code/flink/flink-test-utils-parent/flink-test-utils-junit/target/classes",
+            "/Users/maxwellx/Documents/code/flink/flink-metrics/target/test-classes",
+            "/Users/maxwellx/Documents/code/flink/flink-metrics/target/classes",
+            "/Users/maxwellx/Documents/code/flink/flink-metrics/flink-metrics-core/target/test-classes",
+            "/Users/maxwellx/Documents/code/flink/flink-metrics/flink-metrics-core/target/classes",
+            "/Users/maxwellx/Documents/code/flink/flink-core/target/test-classes",
+            "/Users/maxwellx/Documents/code/flink/flink-core/target/classes",
+            "/Users/maxwellx/Documents/code/flink/flink-connectors/target/test-classes",
+            "/Users/maxwellx/Documents/code/flink/flink-connectors/target/classes",
+            "/Users/maxwellx/Documents/code/flink/flink-connectors/flink-file-sink-common/target/test-classes",
+            "/Users/maxwellx/Documents/code/flink/flink-connectors/flink-file-sink-common/target/classes",
+            "/Users/maxwellx/.m2/repository/org/apache/flink/flink-core/1.15-SNAPSHOT/flink-core-1.15-SNAPSHOT.jar",
+            "/Users/maxwellx/.m2/repository/org/apache/flink/flink-annotations/1.15-SNAPSHOT/flink-annotations-1.15-SNAPSHOT.jar",
+            "/Users/maxwellx/.m2/repository/org/apache/flink/flink-metrics-core/1.15-SNAPSHOT/flink-metrics-core-1.15-SNAPSHOT.jar",
+            "/Users/maxwellx/.m2/repository/org/apache/flink/flink-shaded-asm-9/9.2-15.0/flink-shaded-asm-9-9.2-15.0.jar",
+            "/Users/maxwellx/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar",
+            "/Users/maxwellx/.m2/repository/com/esotericsoftware/kryo/kryo/2.24.0/kryo-2.24.0.jar",
+            "/Users/maxwellx/.m2/repository/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.jar",
+            "/Users/maxwellx/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar",
+            "/Users/maxwellx/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar",
+            "/Users/maxwellx/.m2/repository/org/apache/flink/flink-shaded-guava/30.1.1-jre-15.0/flink-shaded-guava-30.1.1-jre-15.0.jar",
+            "/Users/maxwellx/.m2/repository/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar",
+            "/Users/maxwellx/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar",
+            "/Users/maxwellx/.m2/repository/org/apache/flink/flink-test-utils-junit/1.15-SNAPSHOT/flink-test-utils-junit-1.15-SNAPSHOT.jar",
+            "/Users/maxwellx/.m2/repository/org/testcontainers/testcontainers/1.16.2/testcontainers-1.16.2.jar",
+            "/Users/maxwellx/.m2/repository/org/rnorth/duct-tape/duct-tape/1.0.8/duct-tape-1.0.8.jar",
+            "/Users/maxwellx/.m2/repository/org/jetbrains/annotations/17.0.0/annotations-17.0.0.jar",
+            "/Users/maxwellx/.m2/repository/com/github/docker-java/docker-java-api/3.2.12/docker-java-api-3.2.12.jar",
+            "/Users/maxwellx/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.4/jackson-annotations-2.13.4.jar",
+            "/Users/maxwellx/.m2/repository/com/github/docker-java/docker-java-transport-zerodep/3.2.12/docker-java-transport-zerodep-3.2.12.jar",
+            "/Users/maxwellx/.m2/repository/com/github/docker-java/docker-java-transport/3.2.12/docker-java-transport-3.2.12.jar",
+            "/Users/maxwellx/.m2/repository/net/java/dev/jna/jna/5.8.0/jna-5.8.0.jar",
+            "/Users/maxwellx/.m2/repository/org/apache/flink/flink-shaded-force-shading/15.0/flink-shaded-force-shading-15.0.jar",
+            "/Users/maxwellx/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.1/junit-jupiter-5.8.1.jar",
+            "/Users/maxwellx/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.1/junit-jupiter-api-5.8.1.jar",
+            "/Users/maxwellx/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar",
+            "/Users/maxwellx/.m2/repository/org/junit/platform/junit-platform-commons/1.8.1/junit-platform-commons-1.8.1.jar",
+            "/Users/maxwellx/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.1/junit-jupiter-params-5.8.1.jar",
+            "/Users/maxwellx/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.1/junit-jupiter-engine-5.8.1.jar",
+            "/Users/maxwellx/.m2/repository/org/junit/vintage/junit-vintage-engine/5.8.1/junit-vintage-engine-5.8.1.jar",
+            "/Users/maxwellx/.m2/repository/org/junit/platform/junit-platform-engine/1.8.1/junit-platform-engine-1.8.1.jar",
+            "/Users/maxwellx/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar",
+            "/Users/maxwellx/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar",
+            "/Users/maxwellx/.m2/repository/org/assertj/assertj-core/3.21.0/assertj-core-3.21.0.jar",
+            "/Users/maxwellx/.m2/repository/org/mockito/mockito-core/2.21.0/mockito-core-2.21.0.jar",
+            "/Users/maxwellx/.m2/repository/net/bytebuddy/byte-buddy/1.8.22/byte-buddy-1.8.22.jar",
+            "/Users/maxwellx/.m2/repository/net/bytebuddy/byte-buddy-agent/1.8.22/byte-buddy-agent-1.8.22.jar",
+            "/Users/maxwellx/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar",
+            "/Users/maxwellx/.m2/repository/org/powermock/powermock-module-junit4/2.0.9/powermock-module-junit4-2.0.9.jar",
+            "/Users/maxwellx/.m2/repository/org/powermock/powermock-module-junit4-common/2.0.9/powermock-module-junit4-common-2.0.9.jar",
+            "/Users/maxwellx/.m2/repository/org/powermock/powermock-reflect/2.0.9/powermock-reflect-2.0.9.jar",
+            "/Users/maxwellx/.m2/repository/org/powermock/powermock-core/2.0.9/powermock-core-2.0.9.jar",
+            "/Users/maxwellx/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar",
+            "/Users/maxwellx/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar",
+            "/Users/maxwellx/.m2/repository/org/powermock/powermock-api-mockito2/2.0.9/powermock-api-mockito2-2.0.9.jar",
+            "/Users/maxwellx/.m2/repository/org/powermock/powermock-api-support/2.0.9/powermock-api-support-2.0.9.jar",
+            "/Users/maxwellx/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar",
+            "/Users/maxwellx/.m2/repository/org/testcontainers/junit-jupiter/1.16.2/junit-jupiter-1.16.2.jar",
+            "/Users/maxwellx/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.17.1/log4j-slf4j-impl-2.17.1.jar",
+            "/Users/maxwellx/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar",
+            "/Users/maxwellx/.m2/repository/org/apache/logging/log4j/log4j-core/2.17.1/log4j-core-2.17.1.jar",
+            "/Users/maxwellx/.m2/repository/org/apache/logging/log4j/log4j-1.2-api/2.17.1/log4j-1.2-api-2.17.1.jar",
+            "/Users/maxwellx/.m2/repository/org/scala-lang/scala-library/2.12.7/scala-library-2.12.7.jar"
+        ],
+        "out": "/Users/maxwellx/Documents/code/flink/flink-connectors/flink-file-sink-common/target",
+        "classesDir": "/Users/maxwellx/Documents/code/flink/flink-connectors/flink-file-sink-common/target/test-classes",
+        "resources": [
+            "/Users/maxwellx/Documents/code/flink/flink-connectors/flink-file-sink-common/src/test/resources"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.12.7",
+            "options": [
+                
+            ],
+            "jars": [
+                "/Users/maxwellx/.m2/repository/org/scala-lang/scala-compiler/2.12.7/scala-compiler-2.12.7.jar",
+                "/Users/maxwellx/.m2/repository/org/scala-lang/scala-library/2.12.7/scala-library-2.12.7.jar",
+                "/Users/maxwellx/.m2/repository/org/scala-lang/scala-reflect/2.12.7/scala-reflect-2.12.7.jar",
+                "/Users/maxwellx/.m2/repository/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6.jar",
+                "/Users/maxwellx/.m2/repository/jline/jline/2.14.6/jline-2.14.6.jar"
+            ],
+            "setup": {
+                "order": "java->scala",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                "-g",
+                "-target",
+                "1.8",
+                "-source",
+                "1.8",
+                "-encoding",
+                "UTF-8",
+                "-Xpkginfo:always"
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework",
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "utest.runner.Framework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    {
+                        "args": [
+                            "-v",
+                            "-a"
+                        ],
+                        "framework": {
+                            "names": [
+                                "com.novocode.junit.JUnitFramework"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/Users/maxwellx/.sdkman/candidates/java/8.0.352-tem/jre",
+                "options": [
+                    
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.powermock",
+                    "name": "powermock-reflect",
+                    "version": "2.0.9",
+                    "artifacts": [
+                        {
+                            "name": "powermock-reflect",
+                            "path": "/Users/maxwellx/.m2/repository/org/powermock/powermock-reflect/2.0.9/powermock-reflect-2.0.9.jar"
+                        },
+                        {
+                            "name": "powermock-reflect",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/powermock/powermock-reflect/2.0.9/powermock-reflect-2.0.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.opentest4j",
+                    "name": "opentest4j",
+                    "version": "1.2.0",
+                    "artifacts": [
+                        {
+                            "name": "opentest4j",
+                            "path": "/Users/maxwellx/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar"
+                        },
+                        {
+                            "name": "opentest4j",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apiguardian",
+                    "name": "apiguardian-api",
+                    "version": "1.1.2",
+                    "artifacts": [
+                        {
+                            "name": "apiguardian-api",
+                            "path": "/Users/maxwellx/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar"
+                        },
+                        {
+                            "name": "apiguardian-api",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.docker-java",
+                    "name": "docker-java-transport",
+                    "version": "3.2.12",
+                    "artifacts": [
+                        {
+                            "name": "docker-java-transport",
+                            "path": "/Users/maxwellx/.m2/repository/com/github/docker-java/docker-java-transport/3.2.12/docker-java-transport-3.2.12.jar"
+                        },
+                        {
+                            "name": "docker-java-transport",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/com/github/docker-java/docker-java-transport/3.2.12/docker-java-transport-3.2.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "slf4j-api",
+                    "version": "1.7.32",
+                    "artifacts": [
+                        {
+                            "name": "slf4j-api",
+                            "path": "/Users/maxwellx/.m2/repository/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar"
+                        },
+                        {
+                            "name": "slf4j-api",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.assertj",
+                    "name": "assertj-core",
+                    "version": "3.21.0",
+                    "artifacts": [
+                        {
+                            "name": "assertj-core",
+                            "path": "/Users/maxwellx/.m2/repository/org/assertj/assertj-core/3.21.0/assertj-core-3.21.0.jar"
+                        },
+                        {
+                            "name": "assertj-core",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/assertj/assertj-core/3.21.0/assertj-core-3.21.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.junit.platform",
+                    "name": "junit-platform-engine",
+                    "version": "1.8.1",
+                    "artifacts": [
+                        {
+                            "name": "junit-platform-engine",
+                            "path": "/Users/maxwellx/.m2/repository/org/junit/platform/junit-platform-engine/1.8.1/junit-platform-engine-1.8.1.jar"
+                        },
+                        {
+                            "name": "junit-platform-engine",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/junit/platform/junit-platform-engine/1.8.1/junit-platform-engine-1.8.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.powermock",
+                    "name": "powermock-api-mockito2",
+                    "version": "2.0.9",
+                    "artifacts": [
+                        {
+                            "name": "powermock-api-mockito2",
+                            "path": "/Users/maxwellx/.m2/repository/org/powermock/powermock-api-mockito2/2.0.9/powermock-api-mockito2-2.0.9.jar"
+                        },
+                        {
+                            "name": "powermock-api-mockito2",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/powermock/powermock-api-mockito2/2.0.9/powermock-api-mockito2-2.0.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.junit.jupiter",
+                    "name": "junit-jupiter-engine",
+                    "version": "5.8.1",
+                    "artifacts": [
+                        {
+                            "name": "junit-jupiter-engine",
+                            "path": "/Users/maxwellx/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.1/junit-jupiter-engine-5.8.1.jar"
+                        },
+                        {
+                            "name": "junit-jupiter-engine",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.1/junit-jupiter-engine-5.8.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.powermock",
+                    "name": "powermock-module-junit4",
+                    "version": "2.0.9",
+                    "artifacts": [
+                        {
+                            "name": "powermock-module-junit4",
+                            "path": "/Users/maxwellx/.m2/repository/org/powermock/powermock-module-junit4/2.0.9/powermock-module-junit4-2.0.9.jar"
+                        },
+                        {
+                            "name": "powermock-module-junit4",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/powermock/powermock-module-junit4/2.0.9/powermock-module-junit4-2.0.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.flink",
+                    "name": "flink-shaded-force-shading",
+                    "version": "15.0",
+                    "artifacts": [
+                        {
+                            "name": "flink-shaded-force-shading",
+                            "path": "/Users/maxwellx/.m2/repository/org/apache/flink/flink-shaded-force-shading/15.0/flink-shaded-force-shading-15.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.objenesis",
+                    "name": "objenesis",
+                    "version": "2.1",
+                    "artifacts": [
+                        {
+                            "name": "objenesis",
+                            "path": "/Users/maxwellx/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar"
+                        },
+                        {
+                            "name": "objenesis",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.logging.log4j",
+                    "name": "log4j-1.2-api",
+                    "version": "2.17.1",
+                    "artifacts": [
+                        {
+                            "name": "log4j-1.2-api",
+                            "path": "/Users/maxwellx/.m2/repository/org/apache/logging/log4j/log4j-1.2-api/2.17.1/log4j-1.2-api-2.17.1.jar"
+                        },
+                        {
+                            "name": "log4j-1.2-api",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/apache/logging/log4j/log4j-1.2-api/2.17.1/log4j-1.2-api-2.17.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.powermock",
+                    "name": "powermock-module-junit4-common",
+                    "version": "2.0.9",
+                    "artifacts": [
+                        {
+                            "name": "powermock-module-junit4-common",
+                            "path": "/Users/maxwellx/.m2/repository/org/powermock/powermock-module-junit4-common/2.0.9/powermock-module-junit4-common-2.0.9.jar"
+                        },
+                        {
+                            "name": "powermock-module-junit4-common",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/powermock/powermock-module-junit4-common/2.0.9/powermock-module-junit4-common-2.0.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.javassist",
+                    "name": "javassist",
+                    "version": "3.24.0-GA",
+                    "artifacts": [
+                        {
+                            "name": "javassist",
+                            "path": "/Users/maxwellx/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar"
+                        },
+                        {
+                            "name": "javassist",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.junit.jupiter",
+                    "name": "junit-jupiter-api",
+                    "version": "5.8.1",
+                    "artifacts": [
+                        {
+                            "name": "junit-jupiter-api",
+                            "path": "/Users/maxwellx/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.1/junit-jupiter-api-5.8.1.jar"
+                        },
+                        {
+                            "name": "junit-jupiter-api",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.1/junit-jupiter-api-5.8.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.esotericsoftware.minlog",
+                    "name": "minlog",
+                    "version": "1.2",
+                    "artifacts": [
+                        {
+                            "name": "minlog",
+                            "path": "/Users/maxwellx/.m2/repository/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.jar"
+                        },
+                        {
+                            "name": "minlog",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.powermock",
+                    "name": "powermock-core",
+                    "version": "2.0.9",
+                    "artifacts": [
+                        {
+                            "name": "powermock-core",
+                            "path": "/Users/maxwellx/.m2/repository/org/powermock/powermock-core/2.0.9/powermock-core-2.0.9.jar"
+                        },
+                        {
+                            "name": "powermock-core",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/powermock/powermock-core/2.0.9/powermock-core-2.0.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.junit.jupiter",
+                    "name": "junit-jupiter-params",
+                    "version": "5.8.1",
+                    "artifacts": [
+                        {
+                            "name": "junit-jupiter-params",
+                            "path": "/Users/maxwellx/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.1/junit-jupiter-params-5.8.1.jar"
+                        },
+                        {
+                            "name": "junit-jupiter-params",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.1/junit-jupiter-params-5.8.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.bytebuddy",
+                    "name": "byte-buddy-agent",
+                    "version": "1.8.22",
+                    "artifacts": [
+                        {
+                            "name": "byte-buddy-agent",
+                            "path": "/Users/maxwellx/.m2/repository/net/bytebuddy/byte-buddy-agent/1.8.22/byte-buddy-agent-1.8.22.jar"
+                        },
+                        {
+                            "name": "byte-buddy-agent",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/net/bytebuddy/byte-buddy-agent/1.8.22/byte-buddy-agent-1.8.22-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-collections",
+                    "name": "commons-collections",
+                    "version": "3.2.2",
+                    "artifacts": [
+                        {
+                            "name": "commons-collections",
+                            "path": "/Users/maxwellx/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar"
+                        },
+                        {
+                            "name": "commons-collections",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.code.findbugs",
+                    "name": "jsr305",
+                    "version": "1.3.9",
+                    "artifacts": [
+                        {
+                            "name": "jsr305",
+                            "path": "/Users/maxwellx/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.jetbrains",
+                    "name": "annotations",
+                    "version": "17.0.0",
+                    "artifacts": [
+                        {
+                            "name": "annotations",
+                            "path": "/Users/maxwellx/.m2/repository/org/jetbrains/annotations/17.0.0/annotations-17.0.0.jar"
+                        },
+                        {
+                            "name": "annotations",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/jetbrains/annotations/17.0.0/annotations-17.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.logging.log4j",
+                    "name": "log4j-core",
+                    "version": "2.17.1",
+                    "artifacts": [
+                        {
+                            "name": "log4j-core",
+                            "path": "/Users/maxwellx/.m2/repository/org/apache/logging/log4j/log4j-core/2.17.1/log4j-core-2.17.1.jar"
+                        },
+                        {
+                            "name": "log4j-core",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/apache/logging/log4j/log4j-core/2.17.1/log4j-core-2.17.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.esotericsoftware.kryo",
+                    "name": "kryo",
+                    "version": "2.24.0",
+                    "artifacts": [
+                        {
+                            "name": "kryo",
+                            "path": "/Users/maxwellx/.m2/repository/com/esotericsoftware/kryo/kryo/2.24.0/kryo-2.24.0.jar"
+                        },
+                        {
+                            "name": "kryo",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/com/esotericsoftware/kryo/kryo/2.24.0/kryo-2.24.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.junit.vintage",
+                    "name": "junit-vintage-engine",
+                    "version": "5.8.1",
+                    "artifacts": [
+                        {
+                            "name": "junit-vintage-engine",
+                            "path": "/Users/maxwellx/.m2/repository/org/junit/vintage/junit-vintage-engine/5.8.1/junit-vintage-engine-5.8.1.jar"
+                        },
+                        {
+                            "name": "junit-vintage-engine",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/junit/vintage/junit-vintage-engine/5.8.1/junit-vintage-engine-5.8.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.java.dev.jna",
+                    "name": "jna",
+                    "version": "5.8.0",
+                    "artifacts": [
+                        {
+                            "name": "jna",
+                            "path": "/Users/maxwellx/.m2/repository/net/java/dev/jna/jna/5.8.0/jna-5.8.0.jar"
+                        },
+                        {
+                            "name": "jna",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/net/java/dev/jna/jna/5.8.0/jna-5.8.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "junit",
+                    "name": "junit",
+                    "version": "4.13.2",
+                    "artifacts": [
+                        {
+                            "name": "junit",
+                            "path": "/Users/maxwellx/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar"
+                        },
+                        {
+                            "name": "junit",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/junit/junit/4.13.2/junit-4.13.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.junit.jupiter",
+                    "name": "junit-jupiter",
+                    "version": "5.8.1",
+                    "artifacts": [
+                        {
+                            "name": "junit-jupiter",
+                            "path": "/Users/maxwellx/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.1/junit-jupiter-5.8.1.jar"
+                        },
+                        {
+                            "name": "junit-jupiter",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.1/junit-jupiter-5.8.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.logging.log4j",
+                    "name": "log4j-slf4j-impl",
+                    "version": "2.17.1",
+                    "artifacts": [
+                        {
+                            "name": "log4j-slf4j-impl",
+                            "path": "/Users/maxwellx/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.17.1/log4j-slf4j-impl-2.17.1.jar"
+                        },
+                        {
+                            "name": "log4j-slf4j-impl",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.17.1/log4j-slf4j-impl-2.17.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.docker-java",
+                    "name": "docker-java-api",
+                    "version": "3.2.12",
+                    "artifacts": [
+                        {
+                            "name": "docker-java-api",
+                            "path": "/Users/maxwellx/.m2/repository/com/github/docker-java/docker-java-api/3.2.12/docker-java-api-3.2.12.jar"
+                        },
+                        {
+                            "name": "docker-java-api",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/com/github/docker-java/docker-java-api/3.2.12/docker-java-api-3.2.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.testcontainers",
+                    "name": "junit-jupiter",
+                    "version": "1.16.2",
+                    "artifacts": [
+                        {
+                            "name": "junit-jupiter",
+                            "path": "/Users/maxwellx/.m2/repository/org/testcontainers/junit-jupiter/1.16.2/junit-jupiter-1.16.2.jar"
+                        },
+                        {
+                            "name": "junit-jupiter",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/testcontainers/junit-jupiter/1.16.2/junit-jupiter-1.16.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.hamcrest",
+                    "name": "hamcrest-core",
+                    "version": "1.3",
+                    "artifacts": [
+                        {
+                            "name": "hamcrest-core",
+                            "path": "/Users/maxwellx/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"
+                        },
+                        {
+                            "name": "hamcrest-core",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.flink",
+                    "name": "flink-shaded-asm-9",
+                    "version": "9.2-15.0",
+                    "artifacts": [
+                        {
+                            "name": "flink-shaded-asm-9",
+                            "path": "/Users/maxwellx/.m2/repository/org/apache/flink/flink-shaded-asm-9/9.2-15.0/flink-shaded-asm-9-9.2-15.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.logging.log4j",
+                    "name": "log4j-api",
+                    "version": "2.17.1",
+                    "artifacts": [
+                        {
+                            "name": "log4j-api",
+                            "path": "/Users/maxwellx/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar"
+                        },
+                        {
+                            "name": "log4j-api",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.docker-java",
+                    "name": "docker-java-transport-zerodep",
+                    "version": "3.2.12",
+                    "artifacts": [
+                        {
+                            "name": "docker-java-transport-zerodep",
+                            "path": "/Users/maxwellx/.m2/repository/com/github/docker-java/docker-java-transport-zerodep/3.2.12/docker-java-transport-zerodep-3.2.12.jar"
+                        },
+                        {
+                            "name": "docker-java-transport-zerodep",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/com/github/docker-java/docker-java-transport-zerodep/3.2.12/docker-java-transport-zerodep-3.2.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.testcontainers",
+                    "name": "testcontainers",
+                    "version": "1.16.2",
+                    "artifacts": [
+                        {
+                            "name": "testcontainers",
+                            "path": "/Users/maxwellx/.m2/repository/org/testcontainers/testcontainers/1.16.2/testcontainers-1.16.2.jar"
+                        },
+                        {
+                            "name": "testcontainers",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/testcontainers/testcontainers/1.16.2/testcontainers-1.16.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.flink",
+                    "name": "flink-test-utils-junit",
+                    "version": "1.15-20221215.002102-461",
+                    "artifacts": [
+                        {
+                            "name": "flink-test-utils-junit",
+                            "path": "/Users/maxwellx/.m2/repository/org/apache/flink/flink-test-utils-junit/1.15-SNAPSHOT/flink-test-utils-junit-1.15-SNAPSHOT.jar"
+                        },
+                        {
+                            "name": "flink-test-utils-junit",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/apache/flink/flink-test-utils-junit/1.15-SNAPSHOT/flink-test-utils-junit-1.15-20221215.002102-461-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.commons",
+                    "name": "commons-lang3",
+                    "version": "3.3.2",
+                    "artifacts": [
+                        {
+                            "name": "commons-lang3",
+                            "path": "/Users/maxwellx/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar"
+                        },
+                        {
+                            "name": "commons-lang3",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.powermock",
+                    "name": "powermock-api-support",
+                    "version": "2.0.9",
+                    "artifacts": [
+                        {
+                            "name": "powermock-api-support",
+                            "path": "/Users/maxwellx/.m2/repository/org/powermock/powermock-api-support/2.0.9/powermock-api-support-2.0.9.jar"
+                        },
+                        {
+                            "name": "powermock-api-support",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/powermock/powermock-api-support/2.0.9/powermock-api-support-2.0.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.junit.platform",
+                    "name": "junit-platform-commons",
+                    "version": "1.8.1",
+                    "artifacts": [
+                        {
+                            "name": "junit-platform-commons",
+                            "path": "/Users/maxwellx/.m2/repository/org/junit/platform/junit-platform-commons/1.8.1/junit-platform-commons-1.8.1.jar"
+                        },
+                        {
+                            "name": "junit-platform-commons",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/junit/platform/junit-platform-commons/1.8.1/junit-platform-commons-1.8.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.flink",
+                    "name": "flink-core",
+                    "version": "1.15-20221215.002151-461",
+                    "artifacts": [
+                        {
+                            "name": "flink-core",
+                            "path": "/Users/maxwellx/.m2/repository/org/apache/flink/flink-core/1.15-SNAPSHOT/flink-core-1.15-SNAPSHOT.jar"
+                        },
+                        {
+                            "name": "flink-core",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/apache/flink/flink-core/1.15-SNAPSHOT/flink-core-1.15-20221215.002151-461-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.rnorth.duct-tape",
+                    "name": "duct-tape",
+                    "version": "1.0.8",
+                    "artifacts": [
+                        {
+                            "name": "duct-tape",
+                            "path": "/Users/maxwellx/.m2/repository/org/rnorth/duct-tape/duct-tape/1.0.8/duct-tape-1.0.8.jar"
+                        },
+                        {
+                            "name": "duct-tape",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/rnorth/duct-tape/duct-tape/1.0.8/duct-tape-1.0.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.hamcrest",
+                    "name": "hamcrest-all",
+                    "version": "1.3",
+                    "artifacts": [
+                        {
+                            "name": "hamcrest-all",
+                            "path": "/Users/maxwellx/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar"
+                        },
+                        {
+                            "name": "hamcrest-all",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-annotations",
+                    "version": "2.13.4",
+                    "artifacts": [
+                        {
+                            "name": "jackson-annotations",
+                            "path": "/Users/maxwellx/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.4/jackson-annotations-2.13.4.jar"
+                        },
+                        {
+                            "name": "jackson-annotations",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.4/jackson-annotations-2.13.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.flink",
+                    "name": "flink-shaded-guava",
+                    "version": "30.1.1-jre-15.0",
+                    "artifacts": [
+                        {
+                            "name": "flink-shaded-guava",
+                            "path": "/Users/maxwellx/.m2/repository/org/apache/flink/flink-shaded-guava/30.1.1-jre-15.0/flink-shaded-guava-30.1.1-jre-15.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.flink",
+                    "name": "flink-metrics-core",
+                    "version": "1.15-20221215.002119-461",
+                    "artifacts": [
+                        {
+                            "name": "flink-metrics-core",
+                            "path": "/Users/maxwellx/.m2/repository/org/apache/flink/flink-metrics-core/1.15-SNAPSHOT/flink-metrics-core-1.15-SNAPSHOT.jar"
+                        },
+                        {
+                            "name": "flink-metrics-core",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/apache/flink/flink-metrics-core/1.15-SNAPSHOT/flink-metrics-core-1.15-20221215.002119-461-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.bytebuddy",
+                    "name": "byte-buddy",
+                    "version": "1.8.22",
+                    "artifacts": [
+                        {
+                            "name": "byte-buddy",
+                            "path": "/Users/maxwellx/.m2/repository/net/bytebuddy/byte-buddy/1.8.22/byte-buddy-1.8.22.jar"
+                        },
+                        {
+                            "name": "byte-buddy",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/net/bytebuddy/byte-buddy/1.8.22/byte-buddy-1.8.22-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.12.7",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/Users/maxwellx/.m2/repository/org/scala-lang/scala-library/2.12.7/scala-library-2.12.7.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/scala-lang/scala-library/2.12.7/scala-library-2.12.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.mockito",
+                    "name": "mockito-core",
+                    "version": "2.21.0",
+                    "artifacts": [
+                        {
+                            "name": "mockito-core",
+                            "path": "/Users/maxwellx/.m2/repository/org/mockito/mockito-core/2.21.0/mockito-core-2.21.0.jar"
+                        },
+                        {
+                            "name": "mockito-core",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/mockito/mockito-core/2.21.0/mockito-core-2.21.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.commons",
+                    "name": "commons-compress",
+                    "version": "1.21",
+                    "artifacts": [
+                        {
+                            "name": "commons-compress",
+                            "path": "/Users/maxwellx/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar"
+                        },
+                        {
+                            "name": "commons-compress",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.flink",
+                    "name": "flink-annotations",
+                    "version": "1.15-20221215.002046-462",
+                    "artifacts": [
+                        {
+                            "name": "flink-annotations",
+                            "path": "/Users/maxwellx/.m2/repository/org/apache/flink/flink-annotations/1.15-SNAPSHOT/flink-annotations-1.15-SNAPSHOT.jar"
+                        },
+                        {
+                            "name": "flink-annotations",
+                            "classifier": "sources",
+                            "path": "/Users/maxwellx/.m2/repository/org/apache/flink/flink-annotations/1.15-SNAPSHOT/flink-annotations-1.15-20221215.002046-462-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "test"
+        ]
+    }
+}
