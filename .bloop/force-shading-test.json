@@ -1,0 +1,109 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "force-shading-test",
+        "directory": "/Users/maxwellx/Documents/code/flink/tools/force-shading",
+        "workspaceDir": "/Users/maxwellx/Documents/code/flink",
+        "sources": [
+            
+        ],
+        "dependencies": [
+            "force-shading"
+        ],
+        "classpath": [
+            "/Users/maxwellx/Documents/code/flink/tools/force-shading/target/test-classes",
+            "/Users/maxwellx/Documents/code/flink/tools/force-shading/target/classes"
+        ],
+        "out": "/Users/maxwellx/Documents/code/flink/tools/force-shading/target",
+        "classesDir": "/Users/maxwellx/Documents/code/flink/tools/force-shading/target/test-classes",
+        "resources": [
+            "/Users/maxwellx/Documents/code/flink/tools/force-shading/src/test/resources"
+        ],
+        "java": {
+            "options": [
+                "-g",
+                "-target",
+                "1.6",
+                "-source",
+                "1.6",
+                "-encoding",
+                "UTF-8"
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework",
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "utest.runner.Framework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    {
+                        "args": [
+                            "-v",
+                            "-a"
+                        ],
+                        "framework": {
+                            "names": [
+                                "com.novocode.junit.JUnitFramework"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/Users/maxwellx/.sdkman/candidates/java/8.0.352-tem/jre",
+                "options": [
+                    
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                
+            ]
+        },
+        "tags": [
+            "test"
+        ]
+    }
+}
