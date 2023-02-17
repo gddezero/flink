@@ -50,15 +50,15 @@
             "name": "scala-compiler",
             "version": "2.11.12",
             "options": [
-                
+                "-target:jvm-1.8"
             ],
             "jars": [
-                "/Users/maxwellx/.m2/repository/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar",
-                "/Users/maxwellx/.m2/repository/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar",
-                "/Users/maxwellx/.m2/repository/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar",
                 "/Users/maxwellx/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar",
-                "/Users/maxwellx/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar",
-                "/Users/maxwellx/.m2/repository/jline/jline/2.14.3/jline-2.14.3.jar"
+                "/Users/maxwellx/.m2/repository/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar",
+                "/Users/maxwellx/.m2/repository/jline/jline/2.14.3/jline-2.14.3.jar",
+                "/Users/maxwellx/.m2/repository/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar",
+                "/Users/maxwellx/.m2/repository/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar",
+                "/Users/maxwellx/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar"
             ],
             "setup": {
                 "order": "java->scala",
@@ -78,7 +78,11 @@
                 "1.8",
                 "-encoding",
                 "UTF-8",
-                "-Xpkginfo:always"
+                "-Xpkginfo:always",
+                "--add-exports=java.base/sun.net.util=ALL-UNNAMED",
+                "--add-exports=java.management/sun.management=ALL-UNNAMED",
+                "--add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED",
+                "--add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED"
             ]
         },
         "test": {
@@ -139,7 +143,7 @@
         "platform": {
             "name": "jvm",
             "config": {
-                "home": "/Users/maxwellx/.sdkman/candidates/java/8.0.352-tem/jre",
+                "home": "/Users/maxwellx/.sdkman/candidates/java/11.0.18-tem",
                 "options": [
                     
                 ]

@@ -87,7 +87,7 @@
         "platform": {
             "name": "jvm",
             "config": {
-                "home": "/Users/maxwellx/.sdkman/candidates/java/8.0.352-tem/jre",
+                "home": "/Users/maxwellx/.sdkman/candidates/java/11.0.18-tem",
                 "options": [
                     
                 ]
